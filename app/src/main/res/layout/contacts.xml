@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:background="#ffff"
+    >
+
+    <include
+        layout="@layout/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/name"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/tepian"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etname"
+            android:hint="@string/name"
+            android:background="@drawable/tepian"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:startIconDrawable="@drawable/person"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:layout_marginTop="85dp"
+        android:layout_toStartOf="@id/etname"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/person" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="15dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etphone"
+            android:background="@drawable/tepian"
+            android:layout_marginStart="40dp"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/phone"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:layout_toStartOf="@id/etphone"
+        android:src="@drawable/phone2" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/area"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/name"
+        android:layout_alignEnd="@id/phone"
+        android:layout_marginEnd="5dp"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etare"
+            android:background="@drawable/tepian"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/downarrow"
+            android:hint="@string/area" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/adress"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="40dp"
+        android:layout_below="@+id/phone"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etadress"
+            android:hint="@string/adress"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:background="@drawable/tepian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="235dp"
+        android:layout_toStartOf="@id/etadress"
+        android:src="@drawable/location" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/city"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="40dp"
+        android:layout_below="@+id/adress"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etcity"
+            android:hint="@string/city"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:background="@drawable/tepian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/city"
+        android:layout_marginTop="15dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etstate"
+            android:background="@drawable/tepian"
+            android:drawableEnd="@drawable/downarrow"
+            android:layout_marginStart="40dp"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/state"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/zip"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/city"
+        android:layout_alignEnd="@id/phone"
+        android:layout_marginEnd="5dp"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etzip"
+            android:background="@drawable/tepian"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/zip" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/email"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="40dp"
+        android:layout_below="@+id/state"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etEmail"
+            android:hint="@string/email"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:background="@drawable/tepian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="453dp"
+        android:layout_toStartOf="@id/etEmail"
+        android:src="@drawable/email" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/birthday"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="40dp"
+        android:layout_below="@+id/email"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etbirthday"
+            android:hint="@string/birthday"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:background="@drawable/tepian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/calender"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="527dp"
+        android:layout_toStartOf="@id/etbirthday"
+        android:src="@drawable/cake" />
+
+    <TextView
+        android:text="@string/muhammad_reda"
+        android:gravity="center_horizontal"
+        android:textStyle="italic"
+        android:textSize="20sp"
+        android:layout_marginTop="650dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</RelativeLayout>

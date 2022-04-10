@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Thirdtry</string>
+    <string name="name">name</string>
+    <string name="phone">Phone</string>
+    <string name="area">Area</string>
+    <string name="adress">Address</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="zip">Zip Code</string>
+    <string name="email">Email</string>
+    <string name="birthday">Birthday</string>
+    <string name="muhammad_reda">Muhammad Reda</string>
+</resources>
